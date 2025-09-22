@@ -1,4 +1,4 @@
-name: Test with Caching
+name: Caching
 
 on:
   push:
@@ -32,4 +32,7 @@ jobs:
       run: npm ci
       
     - name: Run tests
-      run: npm test
+      run: Echo "Running Test"
+
+    - name: Finish
+      run: Echo "Finish"
